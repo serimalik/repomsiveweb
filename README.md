@@ -64,6 +64,91 @@
   <footer>
     <p>&copy; 2025 Responsive Web. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  padding: 1em 0;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
+
+.hero button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form label, form input, form textarea {
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero button {
+    width: 100%;
+  }
+}
